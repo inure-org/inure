@@ -1,0 +1,20 @@
+== inure
+
+inure é um aplicativo de gerenciamente de projeto/repositório gratuito
+
+== detalhes do aplicativo
+
+rails 3.1
+funciona apenas com gitosis
+sqlite como banco de dados padrão
+
+== iniciando
+
+1. no prompt de comando, clone o aplicativo:
+2. configure o gitosis https://help.ubuntu.com/community/Git porém use "git" como nome de usuário gitosis
+3. altere o diretório para <tt>app</tt> e rode os próximos comandos:
+		ruby configure.rb # ou ruby configure.rb production | test | development
+4. cheque o arquivo config/gitosis.yml
+5. inicialize o aplicativo:
+		rails s
+6. vá para http://localhost:3000/ e você verá sua página de gerenciamento
