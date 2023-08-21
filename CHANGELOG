@@ -1,0 +1,14 @@
+v0.9.1
+	- aumento de cobertura de testes
+	- melhorias de design
+	- nova notificação de email dos issues
+	- atualização de nome do aplicativo
+	- redesign de issues
+	- issues agora são editáveis
+v0.8.0
+	- highlight de sintaxe para os principais tipos de arquivos
+	- redesign
+	- estabilidade
+	- correções de segurança
+	- aumento de cobertura de testes
+	- notificação de email
