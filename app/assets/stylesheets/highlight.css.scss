@@ -1,5 +1,6 @@
 @mixin round-borders-all($radius) {
     border: 1px solid #eaeaea;
+
     -moz-border-radius: $radius;
     -webkit-border-radius: $radius;
     border-radius: $radius;
