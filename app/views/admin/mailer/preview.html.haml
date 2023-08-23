@@ -1,0 +1,33 @@
+%p essa é a página com preview para todos os emails do sistema que são enviados para o usuário
+%p previews de email construídos baseado em base de projeto/commit/erro existente - então alguns previews podem estar indisponíveis a menos que o objeto apareça no sistema
+
+#accordion
+    %h3
+        %a novo usuário
+    %div
+        %iframe{ :src=> admin_mailer_preview_user_new_path, :width=>"100%", :height=>"350" }
+    
+    %h3
+        %a novo erro
+    %div
+        %iframe{ :src=> admin_mailer_preview_issue_new_path, :width=>"100%", :height=>"350" }
+    
+    %h3
+        %a nota de commit
+    %div
+        %iframe{ :src=> admin_mailer_preview_note_path(:type => "commit"), :width=>"100%", :height=>"350" }
+    
+    %h3
+        %a nota de erro
+    %div
+        %iframe{ :src=> admin_mailer_preview_note_path(:type => "erro"), :width=>"100%", :height=>"350" }
+    
+    %h3
+        %a nota de wall
+    %div
+        %iframe{ :src=> admin_mailer_preview_note_path(:type => "wall"), :width=>"100%", :height=>"350" }
+
+:javascript
+    $(function () {
+        $("#accordion").accordion();
+    });
