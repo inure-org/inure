@@ -1,0 +1,2 @@
+# esse código desativa as notas de todos os controladores temporariamente
+# Footnotes::Filter.notes = []
