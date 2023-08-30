@@ -1,0 +1,27 @@
+%table
+    %tr
+        %th nome
+        %th código
+        %th path
+        %th membros do time
+        %th último commit
+        %th
+        %th
+        %th
+
+    - @admin_projects.each do |project|
+        %tr
+            %td= project.name
+            %td= project.code
+            %td= project.path
+            %td= project.users_projects.count
+            %td= last_commit(project)
+
+            %td= link_to 'mostrar', [:admin, project]
+            %td= link_to 'editar', edit_admin_project_path(project), :id => "edit_#{dom_id(project)}"
+            %td= link_to 'destruir', [:admin, project], :confirm => 'você tem certeza?', :method => :delete
+
+%br
+
+= paginate @admin_projects
+= link_to 'novo projeto', new_admin_project_path
