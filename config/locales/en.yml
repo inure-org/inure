@@ -1,0 +1,10 @@
+# localização de arquivo sample para inglês. adicionar mais arquivos nesse diretório para outros locales.
+# veja https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale para pontos de inicialização.
+
+en:
+  hello: "hello world"
+  errors:
+    messages:
+      wrong_size: "is the wrong size (should be %{file_size})"
+      size_too_small: "is too small (should be at least %{file_size})"
+      size_too_big: "is too big (should be at most %{file_size})"
