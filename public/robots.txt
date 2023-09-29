@@ -1,0 +1,5 @@
+# veja https://www.robotstxt.org/wc/norobots.html para documentação de como utilizar arquivo robots.txt
+#
+# para banir todas as aranhas do documento do site
+# User-Agent: *
+# Disallow: /
