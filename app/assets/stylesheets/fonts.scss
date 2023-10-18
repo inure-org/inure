@@ -1,0 +1,71 @@
+/*---------------------------------------------------------
+fonte variável inter
+
+uso:
+
+html {
+    font-family: 'GitLab Sans', sans-serif;
+}
+---------------------------------------------------------*/
+
+/* gitlab sans - fonte em estilo regular */
+@font-face {
+    font-family: 'GitLab Sans';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+
+    /* stylelint-disable-next-line property-no-unknown */
+    font-named-instance: 'Regular';
+
+    src: font-url('gitlab-sans/GitLabSans.woff2') format('woff2');
+}
+
+/* gitlab sans - fonte em estilo itálico */
+@font-face {
+    font-family: 'GitLab Sans';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+
+    /* stylelint-disable-next-line property-no-unknown */
+    font-named-instance: 'Regular';
+
+    src: font-url('gitlab-sans/GitLabSans-Italic.woff2') format('woff2');
+}
+
+/*---------------------------------------------------------
+fonte monospace gitlab mono
+
+uso:
+
+html {
+    font-family: 'GitLab Mono', monospace;
+}
+---------------------------------------------------------*/
+
+/* gitlab mono - fonte em estilo regular */
+@font-face {
+    font-family: 'GitLab Mono';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+
+    src: font-url('gitlab-mono/GitLabMono.woff2') format('woff2');
+}
+
+/* gitlab mono - fonte em estilo itálico */
+@font-face {
+    font-family: 'GitLab Mono';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: italic;
+
+    src: font-url('gitlab-mono/GitLabMono-Italic.woff2') format('woff2');
+}
+
+// não é a melhor solução, mas é necessário para uma correção
+// https://gitlab.com/gitlab-org/gitlab/-/merge_requests/107592
+* {
+    font-variant-ligatures: none;
+}
